@@ -9,28 +9,22 @@ This is a tool to make developers life easier and database setup more reliable.
 
 ### Components
 
-#### crispy 
-
   - https://github.com/WiseEngineering/crispy-worker
   - https://github.com/WiseEngineering/crispy-web
   - https://github.com/WiseEngineering/crispy-api
+  - https://github.com/WiseEngineering/crispy-cli
 
 They must manage all database operations and be able to execute them in a particular worker. 
-The main goal for those Components to be responsible for running database operations in `worker` and give the user the ability to manage it from [WEB](https://github.com/WiseEngineering/crispy-web)
+The main goal for those Components to be responsible for running database operations in `worker` and give the user the ability to manage it from [WEB](https://github.com/WiseEngineering/crispy-web) or by using [CLI](https://github.com/WiseEngineering/crispy-cli)
 
-#### crispy-cli
-
-https://github.com/WiseEngineering/crispy-cli
-
-Simple CLI interface where you are able to sync your migrations with `crispy` Component.
 
 ## How components will interact with each other
 
 - [crispy-web](https://github.com/WiseEngineering/crispy-web) communicates with [crispy-api](https://github.com/WiseEngineering/crispy-api)
 
- - [crispy-web](https://github.com/WiseEngineering/crispy-web) communicates with [crispy-worker](https://github.com/WiseEngineering/crispy-worker)
+ - [crispy-api](https://github.com/WiseEngineering/crispy-api) communicates with [crispy-worker](https://github.com/WiseEngineering/crispy-worker)
  
-- [crispy-cli](https://github.com/WiseEngineering/crispy-cli) communicates with migrations folder/library based on adapter
+- [crispy-cli](https://github.com/WiseEngineering/crispy-cli) communicates with migrations repository
 
 - [crispy-cli](https://github.com/WiseEngineering/crispy-cli) communicates with [crispy-api](https://github.com/WiseEngineering/crispy-api)
 
