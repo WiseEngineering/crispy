@@ -20,12 +20,7 @@ The main goal for those Components to be responsible for running database operat
 
 ## How components will interact with each other
 
-- [crispy-web](https://github.com/WiseEngineering/crispy-web) communicates with [crispy-api](https://github.com/WiseEngineering/crispy-api)
+![Architecture diagram](./docs/crispy-architecture.png) 
 
- - [crispy-api](https://github.com/WiseEngineering/crispy-api) communicates with [crispy-worker](https://github.com/WiseEngineering/crispy-worker)
- 
-- [crispy-cli](https://github.com/WiseEngineering/crispy-cli) communicates with migrations repository
-
-- [crispy-cli](https://github.com/WiseEngineering/crispy-cli) communicates with [crispy-api](https://github.com/WiseEngineering/crispy-api)
 
 
